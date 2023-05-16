@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>POSTGRESQL</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                             POSTGRESQL
+                        </span>
+                    </h1>
+                </div>
+
+                
+                    <div id="main-content" class="wiki-content group">
+                    <p /><p /><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="544" loading="lazy" src="attachments/5636196/5636259.png?width=544" data-image-src="attachments/5636196/5636259.png" data-height="240" data-width="544" data-unresolved-comment-count="0" data-linked-resource-id="5636259" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_39_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="fc37835e-2506-4ea7-a057-7d92057688b9" data-media-type="file"></span><p /><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="374" loading="lazy" src="attachments/5636196/5603473.png?width=374" data-image-src="attachments/5636196/5603473.png" data-height="182" data-width="373" data-unresolved-comment-count="0" data-linked-resource-id="5603473" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_32_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="fab49805-15ea-4d9c-8427-4ea039b49a54" data-media-type="file"></span><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="618" loading="lazy" src="attachments/5636196/5603485.png?width=618" data-image-src="attachments/5636196/5603485.png" data-height="293" data-width="634" data-unresolved-comment-count="0" data-linked-resource-id="5603485" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_46_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="d221f83c-882e-41b9-8aa4-cc197001bf5f" data-media-type="file"></span><p /><p>According to the database ranking conducted benchmark tests, <strong>PostgreSQL ranks 4<sup>th</sup></strong> among 100s of RDBMS/DBMS available in the market</p><p>	</p><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="346" loading="lazy" src="attachments/5636196/5570722.png?width=346" data-image-src="attachments/5636196/5570722.png" data-height="201" data-width="363" data-unresolved-comment-count="0" data-linked-resource-id="5570722" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_27_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="f2a6ae3b-a240-4b82-9a7c-95201ce43e34" data-media-type="file"></span><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="578" loading="lazy" src="attachments/5636196/5537993.png?width=578" data-image-src="attachments/5636196/5537993.png" data-height="310" data-width="593" data-unresolved-comment-count="0" data-linked-resource-id="5537993" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_43_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="814e8117-1806-464f-ac16-0e74a7418a76" data-media-type="file"></span><p /><p /><p><strong><u>SQL: Datatypes in PostgreSQL</u></strong></p><p><span style="color: rgb(0,0,0);">PostgreSQL supports a wide set of Data Types. Besides, users can create their own custom data type using </span><em><span style="color: rgb(0,0,0);">CREATE TYPE</span></em><span style="color: rgb(0,0,0);"> SQL command. There are different categories of data </span></p><p><span style="color: rgb(0,0,0);">types in PostgreSQL.</span></p><p>	</p><p><strong>Numeric Types</strong></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="476" loading="lazy" src="attachments/5636196/5570706.png?width=476" data-image-src="attachments/5636196/5570706.png" data-height="389" data-width="475" data-unresolved-comment-count="0" data-linked-resource-id="5570706" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_25_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="0f8b9fcb-9b65-4ac3-ae2f-2fbafe2f6096" data-media-type="file"></span><p /><p><strong>Character Types</strong></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="476" loading="lazy" src="attachments/5636196/5636220.png?width=476" data-image-src="attachments/5636196/5636220.png" data-height="171" data-width="474" data-unresolved-comment-count="0" data-linked-resource-id="5636220" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_18_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="a0212191-b14c-4c44-96b0-0300b55e0965" data-media-type="file"></span><p /><p><strong>Date/Time Types</strong></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="455" loading="lazy" src="attachments/5636196/5636224.png?width=455" data-image-src="attachments/5636196/5636224.png" data-height="227" data-width="468" data-unresolved-comment-count="0" data-linked-resource-id="5636224" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_23_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="38df8dae-cd36-4d28-8127-4d5a800bc359" data-media-type="file"></span><p /><p><strong>Boolean Type</strong></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="448" loading="lazy" src="attachments/5636196/5603469.png?width=448" data-image-src="attachments/5636196/5603469.png" data-height="46" data-width="464" data-unresolved-comment-count="0" data-linked-resource-id="5603469" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_1_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="dc22d2d0-4fd4-4599-8a13-cb1e2fdc45f1" data-media-type="file"></span><p /><p><strong>Enumerated Type</strong></p><p style="margin-left: 60.0px;"><span style="color: rgb(0,0,0);">Enumerated (enum) types are data types that comprise a static, ordered set of values. They are equivalent to the enum types supported in a number of programming languages. Unlike other types, Enumerated Types need to be created using CREATE TYPE command. This type is used to store a static, ordered set of values.</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">	CREATE TYPE week AS ENUM (&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;);</pre>
+</div></div><p /><p>		</p><p><strong>Array Type</strong></p><p>		<span style="color: rgb(0,0,0);">PostgreSQL gives the opportunity to define a column of a table as a variable length multidimensional array.</span></p><p><span style="color: rgb(0,0,0);">		Array type can be declared as:</span></p><p style="margin-left: 90.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">CREATE TABLE monthly_savings 
+
+(
+
+   name 			text,
+
+   saving_per_quarter 	integer[],
+
+   scheme 		text[][]
+
+);</pre>
+</div></div><p>		<span style="color: rgb(0,0,0);">And, Inserting data to understand the topic:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">INSERT INTO monthly_savings 
+
+VALUES (&#39;Manisha&#39;, 
+
+   &#39;{20000, 14600, 23500, 13250}&#39;, 
+
+   &#39;{{&quot;FD&quot;, &quot;MF&quot;}, {&quot;FD&quot;, &quot;Property&quot;}}&#39;
+
+);</pre>
+</div></div><p style="margin-left: 90.0px;" /><p style="margin-left: 90.0px;" /><p>			</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="476" loading="lazy" src="attachments/5636196/5537977.png?width=476" data-image-src="attachments/5636196/5537977.png" data-height="61" data-width="488" data-unresolved-comment-count="0" data-linked-resource-id="5537977" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_2_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="14c79b8c-5cf9-4847-a188-496691250b7d" data-media-type="file"></span><p>		</p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">And, accessing arrays in the above table:</span></p><p style="margin-left: 90.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">SELECT name, saving_per_quarter[2], saving_per_quarter[4], scheme[1][2], scheme[2][2]
+FROM monthly_savings WHERE saving_per_quarter[2] &gt; saving_per_quarter[4];</pre>
+</div></div><p><span style="color: rgb(0,0,0);">			</span></p><p><span style="color: rgb(0,0,0);">			</span></p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="414" loading="lazy" src="attachments/5636196/5603477.png?width=414" data-image-src="attachments/5636196/5603477.png" data-height="45" data-width="427" data-unresolved-comment-count="0" data-linked-resource-id="5603477" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_3_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="d91a0038-c88b-4f5b-9bb0-7802b6eb2bb1" data-media-type="file"></span><p /><p><strong>Composite Type</strong></p><p>		<span style="color: rgb(0,0,0);">This type represents a list of field names and their data types, i.e., structure of a row or record of a table. </span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">CREATE TYPE inventory_item AS 
+
+(
+
+   name 		text,
+
+   supplier_id 	integer,
+
+   price 		numeric
+
+);</pre>
+</div></div><p /><p style="margin-left: 90.0px;" /><p style="margin-left: 90.0px;" /><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">This data type can be used in the create tables as below −</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">CREATE TABLE on_hand (
+
+   item     inventory_item,
+
+   count   integer
+
+);</pre>
+</div></div><p /><p style="margin-left: 90.0px;" /><p style="margin-left: 90.0px;" /><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">And, Inserting data to understand the topic:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">INSERT INTO on_hand VALUES (ROW(&#39;fuzzy dice&#39;, 42, 1.99), 1000);
+
+OR
+
+INSERT INTO on_hand VALUES ((&#39;fuzzy dice&#39;, 42, 1.99), 1000);</pre>
+</div></div><p /><p style="margin-left: 90.0px;" /><p>		</p><p>			</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="238" loading="lazy" src="attachments/5636196/5570702.png?width=238" data-image-src="attachments/5636196/5570702.png" data-height="38" data-width="252" data-unresolved-comment-count="0" data-linked-resource-id="5570702" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_4_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="97686b1e-aab9-4783-a2b9-546609eb7689" data-media-type="file"></span><p /><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">And, accessing composite data types:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">SELECT (item).name FROM on_hand WHERE (item).price &lt; 9.99;
+
+OR
+
+SELECT (on_hand.item).name FROM on_hand WHERE (on_hand.item).price &lt; 9.99;</pre>
+</div></div><p /><p style="margin-left: 90.0px;" /><p>			</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="102" loading="lazy" src="attachments/5636196/5537961.png?width=102" data-image-src="attachments/5636196/5537961.png" data-height="45" data-width="109" data-unresolved-comment-count="0" data-linked-resource-id="5537961" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_5_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="d9365adc-0d50-4c58-a289-26df7905c7bd" data-media-type="file"></span><p>	</p><hr/><p /><p><strong><u>SQL: Sublanguages</u></strong></p><p><span style="color: rgb(0,0,0);">When we talk about databases. One of the biggest types that exists is SQL. SQL or </span><strong><span style="color: rgb(0,0,0);">Structured Query Language</span></strong><span style="color: rgb(0,0,0);"> is used where you have to keep data that is relational in </span></p><p><span style="color: rgb(0,0,0);">nature. </span><a class="external-link" href="https://www.mysql.com/" rel="nofollow"><span style="color: rgb(0,0,0);">Mysql</span></a><span style="color: rgb(0,0,0);">, </span><a class="external-link" href="https://www.postgresql.org/" rel="nofollow"><span style="color: rgb(0,0,0);">Postgres</span></a><span style="color: rgb(0,0,0);">, </span><a class="external-link" href="https://www.ibm.com/analytics/db2" rel="nofollow"><span style="color: rgb(0,0,0);">DB2</span></a><span style="color: rgb(0,0,0);"> are the different software that implements it. SQL comprises of many sub-languages that provide different capabilities to SQL. The capabilities that </span></p><p><span style="color: rgb(0,0,0);">are provided by sub-languages of SQL are creation, manipulation of data, querying and control on it.</span></p><p><span style="color: rgb(0,0,0);">Now when we talk about different types of sub-languages that are supported by SQL, people generally know about </span><strong><span style="color: rgb(0,0,0);">DDL</span></strong><span style="color: rgb(0,0,0);">(Data Definition Language) and </span><strong><span style="color: rgb(0,0,0);">DML</span></strong><span style="color: rgb(0,0,0);">(Data Manipulation </span></p><p><span style="color: rgb(0,0,0);">Language). We will also talk about other types of sub-languages in SQL and what commands they provide to work with SQL.</span></p><p /><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="408" loading="lazy" src="attachments/5636196/5603465.png?width=408" data-image-src="attachments/5636196/5603465.png" data-height="101" data-width="408" data-unresolved-comment-count="0" data-linked-resource-id="5603465" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_19_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="f627829c-7622-42f7-a998-770e68271d87" data-media-type="file"></span><p>	</p><p><strong><span style="color: rgb(0,0,0);">DML </span></strong><span style="color: rgb(0,0,0);">( Data Manipulation Language )</span></p><p>		<span style="color: rgb(0,0,0);">In DML, we try to manipulate the data. Commands like </span><strong><span style="color: rgb(0,0,0);">INSERT</span></strong><span style="color: rgb(0,0,0);">, </span><strong><span style="color: rgb(0,0,0);">UPDATE &amp; DELETE</span></strong><span style="color: rgb(0,0,0);"> are part of this sub-language.</span></p><p /><p><strong><span style="color: rgb(0,0,0);">DDL </span></strong><span style="color: rgb(0,0,0);">( Data Definition Language )</span></p><p>		<span style="color: rgb(0,0,0);">In DDL, we define the data structure and relation between them. Commands like </span><strong><span style="color: rgb(0,0,0);">CREATE, DROP, TRUNCATE &amp; ALTER</span></strong><span style="color: rgb(0,0,0);"> are part of this.</span></p><p /><p><strong><span style="color: rgb(0,0,0);">DCL </span></strong><span style="color: rgb(0,0,0);">( Data Control Language )</span></p><p>		<span style="color: rgb(0,0,0);">In DCL, we control access to data. This is used for permission management and who can access the data. Commands like </span><strong><span style="color: rgb(0,0,0);">GRANT</span></strong><span style="color: rgb(0,0,0);"> and </span><strong><span style="color: rgb(0,0,0);">REVOKE</span></strong><span style="color: rgb(0,0,0);"> are part of this sub-</span></p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">language</span></p><p /><p><strong><span style="color: rgb(0,0,0);">TCL </span></strong><span style="color: rgb(0,0,0);">( Transaction Control Language )</span></p><p>		<span style="color: rgb(0,0,0);">In TCL we control the flow in a transaction. </span><strong><span style="color: rgb(0,0,0);">COMMIT</span></strong><span style="color: rgb(0,0,0);"> and </span><strong><span style="color: rgb(0,0,0);">ROLLBACK</span></strong><span style="color: rgb(0,0,0);"> are part of this sub language.</span></p><p /><p><strong><span style="color: rgb(0,0,0);">DQL </span></strong><span style="color: rgb(0,0,0);">( Data Query Language )</span></p><p>		<span style="color: rgb(0,0,0);">In DQL, we query the data. </span><strong><span style="color: rgb(0,0,0);">SELECT</span></strong><span style="color: rgb(0,0,0);"> command is part of DQL.</span></p><p /><hr/><p><strong><u>SQL: Views</u></strong></p><p /><p>	<span style="color: rgb(0,0,0);">Views are </span><strong><span style="color: rgb(0,0,0);">pseudo-tables</span></strong><span style="color: rgb(0,0,0);">. That is, they are not real tables; nevertheless appear as ordinary tables to </span><strong><span style="color: rgb(0,0,0);">SELECT</span></strong><span style="color: rgb(0,0,0);">. A view can represent a subset of a real table, selecting certain </span></p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">columns or certain rows from an ordinary table. A view can even represent joined tables. Because views are assigned separate permissions, you can use them to restrict table access so that the users see only specific rows or columns of a table.</span></p><p>	</p><p>	<span style="color: rgb(0,0,0);">A view can contain all rows of a table or selected rows from one or more tables. A view can be created from one or many tables, which depends on the written PostgreSQL query </span></p><p><span style="color: rgb(0,0,0);">to create a view.</span></p><p><span style="color: rgb(0,0,0);">Views, which are kind of virtual tables, allow users to do the following −</span></p><ul><li><p><span style="color: rgb(0,0,0);">Structure data in a way that users or classes of users find natural or intuitive.</span></p></li><li><p><span style="color: rgb(0,0,0);">Restrict access to the data such that a user can only see limited data instead of complete table.</span></p></li><li><p><span style="color: rgb(0,0,0);">Summarize data from various tables, which can be used to generate reports.</span></p></li></ul><p /><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">Since views are not ordinary tables, you may </span><strong><span style="color: rgb(0,0,0);">not be able to execute a DELETE, INSERT, or UPDATE statement on a view</span></strong><span style="color: rgb(0,0,0);">. However, you can create a RULE to correct this problem of using DELETE, INSERT or UPDATE on a view.</span></p><p /><p>	<span style="color: rgb(0,0,0);">Consider, the </span><a class="external-link" href="https://www.tutorialspoint.com/postgresql/company.sql" rel="nofollow"><strong>COMPANY</strong></a><span style="color: rgb(0,0,0);"> table is having the following records −</span></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="374" loading="lazy" src="attachments/5636196/5636212.png?width=374" data-image-src="attachments/5636196/5636212.png" data-height="204" data-width="374" data-unresolved-comment-count="0" data-linked-resource-id="5636212" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_20_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="15ddacf4-ef84-454d-b7f6-e04063da3985" data-media-type="file"></span><p>	<span style="color: rgb(0,0,0);">This view would be used to have only few columns from COMPANY table −</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">create  view   company_view   as
+
+select id, name, age
+
+from  company;</pre>
+</div></div><p /><p style="margin-left: 30.0px;" /><p><span style="color: rgb(0,0,0);">	Now, query COMPANY_VIEW</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">select  *  from  company_view;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">			</span></p><p><span style="color: rgb(0,0,0);">		</span></p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="115" loading="lazy" src="attachments/5636196/5636208.png?width=115" data-image-src="attachments/5636196/5636208.png" data-height="133" data-width="127" data-unresolved-comment-count="0" data-linked-resource-id="5636208" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_6_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="47ffa0db-d7e2-4888-8c7e-7f7bbceb3c9d" data-media-type="file"></span><p /><p><span style="color: rgb(0,0,0);">	Now, drop view COMPANY_VIEW</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">drop  view  company_view;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">		</span></p><hr/><p><strong><u>SQL: USERS</u></strong></p><p><span style="color: rgb(0,0,0);">	</span><span style="color: rgb(13,10,11);">Database users are conceptually completely separate from operating system users. In practice it might be convenient to maintain a correspondence, but this is not </span></p><p><span style="color: rgb(13,10,11);">required. Database user names are global across a database cluster installation (and not per individual database). </span></p><p /><p><span style="color: rgb(13,10,11);">To create a user use the </span><a class="external-link" href="https://www.postgresql.org/docs/8.0/sql-createuser.html" rel="nofollow"><strong><span style="color: rgb(13,10,11);">CREATE USER</span></strong></a><span style="color: rgb(13,10,11);"> SQL command:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">create user &lt;name&gt;;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">		</span></p><p /><p><span style="color: rgb(0,0,0);">	</span><span style="color: rgb(13,10,11);">To remove an existing user, use the analogous</span><strong><span style="color: rgb(13,10,11);">  </span></strong><a class="external-link" href="https://www.postgresql.org/docs/8.0/sql-dropuser.html" rel="nofollow"><strong><span style="color: rgb(13,10,11);">DROP USER</span></strong></a><span style="color: rgb(13,10,11);"> command:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">drop user &lt;name&gt;;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">		</span></p><p /><p><span style="color: rgb(0,0,0);">	</span><span style="color: rgb(13,10,11);">To determine the set of existing users, examine the pg_user system catalog, for example</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">SELECT usename FROM pg_user;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">		</span></p><p><span style="color: rgb(0,0,0);">	</span></p><p><span style="color: rgb(0,0,0);">	</span><span style="color: rgb(13,10,11);">The </span><a class="external-link" href="https://www.postgresql.org/docs/8.0/app-psql.html" rel="nofollow"><strong><span style="color: rgb(13,10,11);">psql</span></strong></a><span style="color: rgb(13,10,11);"> program's </span><strong><span style="color: rgb(13,10,11);">\du</span></strong><span style="color: rgb(13,10,11);"> meta-command is also useful for listing the existing users.</span></p><p><span style="color: rgb(0,0,0);">		</span></p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="455" loading="lazy" src="attachments/5636196/5603449.png?width=455" data-image-src="attachments/5636196/5603449.png" data-height="68" data-width="472" data-unresolved-comment-count="0" data-linked-resource-id="5603449" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_7_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="bc9ecc64-c286-49e6-a8ac-834358888e37" data-media-type="file"></span><p><span style="color: rgb(0,0,0);">	</span></p><p><strong><span style="color: rgb(0,0,0);">User Attrbutes:</span></strong></p><p><span style="color: rgb(0,0,0);">		</span><span style="color: rgb(13,10,11);">A database user may have a number of attributes that define its privileges and interact with the client authentication system.</span></p><ul><li><p><em><span style="color: rgb(13,10,11);">Superuser</span></em></p><ul><li><p><span style="color: rgb(13,10,11);">To create a database superuser, use </span><span style="color: rgb(0,0,0);">CREATE USER &lt;username&gt; CREATEROLE; </span></p></li></ul></li><li><p><em><span style="color: rgb(13,10,11);">Database creation</span></em></p><ul><li><p><span style="color: rgb(13,10,11);">A user must be explicitly given permission to create databases. To create such a user, use </span><span style="color: rgb(0,0,0);">CREATE </span></p></li></ul></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">USER &lt;username&gt; CREATEDB;</pre>
+</div></div><p /><ul><li><p><em><span style="color: rgb(13,10,11);">Password</span></em></p><ul><li><p><span style="color: rgb(13,10,11);">Specify a password upon user creation with </span><span style="color: rgb(0,0,0);">CREATE USER &lt;username&gt; PASSWORD 'string'</span></p></li></ul></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres -#  ALTER USER &lt;username&gt; WITH ENCRYPTED password &#39;password&#39;;</pre>
+</div></div><p /><p /><p style="margin-left: 120.0px;" /><p style="margin-left: 90.0px;" /><p><strong><span style="color: rgb(0,0,0);">User Groups:</span></strong></p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">	</span><span style="color: rgb(13,10,11);">As in Unix, groups are a way of logically grouping users to ease management of privileges: privileges can be granted to, or revoked from, a group as a whole. To </span></p><p style="margin-left: 30.0px;"><span style="color: rgb(13,10,11);">create a group, use the </span><a class="external-link" href="https://www.postgresql.org/docs/8.0/sql-creategroup.html" rel="nofollow"><strong><span style="color: rgb(13,10,11);">CREATE GROUP</span></strong></a><span style="color: rgb(13,10,11);"> SQL command:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">CREATE GROUP &lt;groupname&gt;;</pre>
+</div></div><p /><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">	</span></p><p><span style="color: rgb(0,0,0);">		</span></p><p><span style="color: rgb(0,0,0);">		</span><span style="color: rgb(13,10,11);">To add users to or remove users from an existing group, use </span><a class="external-link" href="https://www.postgresql.org/docs/8.0/sql-altergroup.html" rel="nofollow"><strong><span style="color: rgb(13,10,11);">ALTER GROUP</span></strong></a><strong><span style="color: rgb(13,10,11);">:</span></strong></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">ALTER GROUP &lt;groupname&gt; ADD USER &lt;username1&gt;, &lt;username2&gt;, …;
+
+ALTER GROUP &lt;groupname&gt; DROP USER &lt;username1&gt;, &lt;username2&gt;, …;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">			</span></p><p /><p><span style="color: rgb(0,0,0);">		</span><span style="color: rgb(13,10,11);">To destroy a group, use </span><a class="external-link" href="https://www.postgresql.org/docs/8.0/sql-dropgroup.html" rel="nofollow"><strong><span style="color: rgb(13,10,11);">DROP GROUP</span></strong></a><strong><span style="color: rgb(13,10,11);">:</span></strong></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">DROP GROUP &lt;groupname&gt;;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">			</span></p><p><span style="color: rgb(0,0,0);">			</span><em><span style="color: rgb(13,10,11);">This only drops the group, not its member users.</span></em></p><p><span style="color: rgb(0,0,0);">		</span></p><p style="margin-left: 30.0px;"><span style="color: rgb(13,10,11);">To determine the set of existing groups, examine the </span><strong>pg_group<span style="color: rgb(13,10,11);"> </span></strong><span style="color: rgb(13,10,11);">system catalog, for example</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">SELECT groname FROM pg_group;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">			</span></p><p /><p style="margin-left: 30.0px;"><span style="color: rgb(13,10,11);">The </span><a class="external-link" href="https://www.postgresql.org/docs/8.0/app-psql.html" rel="nofollow"><span style="color: rgb(13,10,11);">psql</span></a><span style="color: rgb(13,10,11);"> program's</span><strong><span style="color: rgb(13,10,11);"> </span>\dg</strong><span style="color: rgb(13,10,11);"> meta-command is also useful for listing the existing groups.</span></p><p style="margin-left: 30.0px;"><span style="color: rgb(13,10,11);">	</span></p><hr/><p><strong><u>PostgreSQL - Environment Setup</u></strong></p><p /><p><strong>Linux/Unix</strong></p><p style="margin-left: 30.0px;"><em><u>Install and Configure PostgreSql</u></em></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: powershell; gutter: false; theme: Confluence" data-theme="Confluence">$&gt; sudo sh -c &#39;echo &quot;deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`  -pgdg  main&quot; &gt;&gt; /etc/apt/sources.list.d/pgdg.list&#39;
+
+$&gt; wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -    
+
+$&gt; sudo apt-get  install  postgresql   postgresql-contrib   -y</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;"><em><u>Enable and Start Postgresql</u></em></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: powershell; gutter: false; theme: Confluence" data-theme="Confluence">$&gt; sudo systemctl enable postgresql
+
+$&gt; sudo systemctl start postgresql</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;"><em><u>Change the passwd for postgres user</u></em></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: powershell; gutter: false; theme: Confluence" data-theme="Confluence">$&gt; sudo passwd postgres
+
+user = postgres  password = postgres</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;"><em><u>Switch to postgres user and create a user called sonar for SonarQube database under Postgresql</u></em></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: powershell; gutter: false; theme: Confluence" data-theme="Confluence">$&gt; su - postgres
+
+$&gt; createuser sonar</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>This is to create the database user sonar </p></div></div><p style="margin-left: 60.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: powershell; gutter: false; theme: Confluence" data-theme="Confluence">$&gt; psql</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;"><em><u>Set a password for the newly created user for SonarQube database and create a database for Postgresql database</u></em></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres -#  ALTER USER sonar WITH ENCRYPTED password &#39;password&#39;;
+
+postgres -#  CREATE DATABASE sonar OWNER sonar;
+
+postgres -#  \list</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>List all the databases within the PostgreSql </p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres -#  \connect   sonar</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Connect/Select a desired database </p></div></div><p>	         </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres -#  SELECT  *   FROM    information_schema.tables;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Select all tables in the database for the particular schema</p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres -#  \dt  *.*;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Select all tables in the database from all the schemas</p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;">    </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres -#  SELECT  *  FROM  information_schema.sql_features;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Select all columns from a table from a particular schema</p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;"> </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres -#  SELECT  *  FROM   pg_am;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Select all columns from a table without mentioning the particular schema</p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;">     </p><p /><p style="margin-left: 60.0px;"><em><u>Exit the psql shell and switch back to the user by running exit command</u></em></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres -#  \q
+
+$&gt;  exit</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p style="margin-left: 60.0px;"><em><u>Connect to database from outside while login to Postgres user</u></em></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">$&gt; psql -h localhost -p 5432 -U sonar sonar
+
+postgres -#  \q
+
+$&gt; exit</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p><strong>Windows</strong></p><p>	<a class="external-link" href="https://www.postgresql.org/download/windows/" rel="nofollow">https://www.postgresql.org/download/windows/</a></p><p>	<a class="external-link" href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" rel="nofollow">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a></p><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="578" loading="lazy" src="attachments/5636196/5636243.png?width=578" data-image-src="attachments/5636196/5636243.png" data-height="352" data-width="580" data-unresolved-comment-count="0" data-linked-resource-id="5636243" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_36_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="557ccae2-39f3-4eed-a17e-f28ad440ac53" data-media-type="file"></span><p /><p>	Username: postgres</p><p>	Password: password</p><p>	Port: 5432</p><p>	PGAdmin Password: password</p><p>	</p><p>Use the <strong>Query Tool</strong> to open the SQLEditor </p><p /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgress# \help show;
+
+postgress# show ALL;</pre>
+</div></div><p /><p /><p /><p /><p /><p><strong>Backend Database</strong> using psql:</p><p>After having install PostgreSQL we need to invoke <strong>psql</strong> (Postgres SQL shell) setting the password:</p><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="544" loading="lazy" src="attachments/5636196/5570710.png?width=544" data-image-src="attachments/5636196/5570710.png" data-height="347" data-width="556" data-unresolved-comment-count="0" data-linked-resource-id="5570710" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_26_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="6e4f4312-34c2-428d-9acb-9806046cc2c4" data-media-type="file"></span><p>   </p><p>To check the installed postgresql version</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres# select version();</pre>
+</div></div><p /><p style="margin-left: 30.0px;" /><p /><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="659" loading="lazy" src="attachments/5636196/5537981.png?width=659" data-image-src="attachments/5636196/5537981.png" data-height="173" data-width="671" data-unresolved-comment-count="0" data-linked-resource-id="5537981" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_28_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="1e69c9bc-66f7-4f59-8388-97710630b263" data-media-type="file"></span><p style="margin-left: 60.0px;" /><p>To <strong>list</strong> the available databases, in the default schema</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres# \list</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>\l is short command instead of \list </p></div></div><p style="margin-left: 30.0px;" /><p style="margin-left: 30.0px;" /><p /><p>Let's <strong>create a database</strong> for our demo</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres# create database sql_demo;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p>To <strong>connect</strong> to the database just created </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres# \c  sql_demo postgres;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>\connect sql_demo is long version</p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p /><p>To check the number of connections on the database sql_demo</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">sql_demo# select datname, numbackends from  pg_stat_database where datname=&#39;sql_demo&#39;;
+result -&gt; numbackends = 2</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p>		</p><p>To disconnect from the current database and go to the other database</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">sql_demo# \c postgres postgres;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p>Now, to check the number of connections on the database sql_demo</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">sql_demo# select datname, numbackends from  pg_stat_database where datname=&#39;sql_demo&#39;;
+
+result -&gt; numbackends = 1</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p><span style="color: rgb(35,38,41);">The standard </span><strong><span style="color: rgb(35,38,41);">DROP DATABASE db_name</span></strong><span style="color: rgb(35,38,41);"> from the CLI query </span><span style="color: rgb(255,0,0);">doesn't work </span><span style="color: rgb(35,38,41);">when there are open connections</span></p><p><strong>Soln 1:</strong></p><ul><li><p>In this case just come out of PGADMIN - that will close all open connections on any db</p></li><li><p>Then check the no. of connections from SQL Shell -&gt; select datname, numbackends from  pg_stat_database where datname='sql_demo';  result -&gt; numbackends = 0</p></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">mydb# \c postgres postgres;
+
+postgres# drop database mydb;</pre>
+</div></div><p /><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;"><strong>Soln 2:</strong></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres# select datname, numbackends from  pg_stat_database where datname=&#39;sql_demo&#39;;  
+
+result -&gt; numbackends = 2</pre>
+</div></div><p /><p /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres# DROP DATABASE db_name WITH (FORCE);</pre>
+</div></div><p /><p /><p style="margin-left: 60.0px;" /><p /><p><strong>Frontend</strong> Administrative tool - <strong>PGADMIN</strong>:</p><p>  	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="578" loading="lazy" src="attachments/5636196/5537973.png?width=578" data-image-src="attachments/5636196/5537973.png" data-height="247" data-width="585" data-unresolved-comment-count="0" data-linked-resource-id="5537973" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_29_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="e5777b24-430c-4a9a-a190-38e971bca979" data-media-type="file"></span><p /><p>Invoke the <strong>Query Tool</strong> on a particular database:</p><p>	Right Click on SQL_DEMO database  =&gt;  Query Tool  =&gt;  Opens the Query Editor</p><p>	Run the same version check command as done with the backend interface </p><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="557" loading="lazy" src="attachments/5636196/5570718.png?width=557" data-image-src="attachments/5636196/5570718.png" data-height="325" data-width="574" data-unresolved-comment-count="0" data-linked-resource-id="5570718" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_35_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="b2a8f459-0264-4d00-8b1d-88708b118fbc" data-media-type="file"></span><p /><p>Create a <strong>table</strong> (backend character terminal SQL Shell): </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres# create table movies(movie_id int, movie_name varchar(40),  movie_genre  varchar(30),  imdb_ratings real);</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p>Refresh the database SQL_DEMO -&gt; find the Table <strong>movies</strong></p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="680" loading="lazy" src="attachments/5636196/5570730.png?width=680" data-image-src="attachments/5636196/5570730.png" data-height="345" data-width="730" data-unresolved-comment-count="0" data-linked-resource-id="5570730" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_40_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="88d9bac3-5aee-44e3-a6e5-62621591fe20" data-media-type="file"></span><p /><p>Create a <strong>table</strong> (frontend PGAdmin): </p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="680" loading="lazy" src="attachments/5636196/5537985.png?width=680" data-image-src="attachments/5636196/5537985.png" data-height="443" data-width="730" data-unresolved-comment-count="0" data-linked-resource-id="5537985" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_38_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="6dfe4449-34c3-4b16-9e5a-6da12293f822" data-media-type="file"></span><p /><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="442" loading="lazy" src="attachments/5636196/5537989.png?width=442" data-image-src="attachments/5636196/5537989.png" data-height="285" data-width="446" data-unresolved-comment-count="0" data-linked-resource-id="5537989" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_30_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="307865f5-423f-46eb-9ca2-8b84f7e7e138" data-media-type="file"></span><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="476" loading="lazy" src="attachments/5636196/5538001.png?width=476" data-image-src="attachments/5636196/5538001.png" data-height="283" data-width="482" data-unresolved-comment-count="0" data-linked-resource-id="5538001" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_33_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="1bf82057-b8fc-42ea-9420-b30f2fdfc165" data-media-type="file"></span><p /><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="618" loading="lazy" src="attachments/5636196/5636247.png?width=618" data-image-src="attachments/5636196/5636247.png" data-height="327" data-width="629" data-unresolved-comment-count="0" data-linked-resource-id="5636247" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_41_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="edbe5eb7-ee30-4dd2-a0d1-396dda3fc60a" data-media-type="file"></span><p>	</p><p /><p><strong>Select</strong> all columns from a <strong>table</strong> (frontend PGAdmin Query Editor):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from movies;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p> <strong>Drop</strong> the table from schema SQL_DEMO (frontend PGAdmin Query Editor):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; drop table students;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p>Insert into table movies (PGAdmin Query Editor)</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">insert into movies (movie_id, movie_name, movie_genre, imdb_ratings)
+
+values 
+
+(101, &#39;Vertigo&#39;, &#39;Mystery, Romance&#39;, 8.3),
+
+(102, &#39;The Shawshank Rdedemption&#39;, &#39;Crime Fiction&#39;, 9.3),
+
+(103, &#39;12 Angry Men&#39;, &#39;Drama&#39;, 9.0),
+
+(104, &#39;The Dark Knight&#39;, &#39;Action&#39;, 9.0),
+
+(105, &#39;The Matrix&#39;, &#39;Sci-Fi&#39;, 8.7),
+
+(106, &#39;Se7en&#39;, &#39;Crime&#39;, 8.6),
+
+(107, &#39;Interstellar&#39;, &#39;Adventure&#39;, 8.6),
+
+(108, &#39;The Lion King&#39;, &#39;Animation, Adventure&#39;, 8.5);</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p>	</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="680" loading="lazy" src="attachments/5636196/5538015.png?width=680" data-image-src="attachments/5636196/5538015.png" data-height="346" data-width="867" data-unresolved-comment-count="0" data-linked-resource-id="5538015" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_45_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="97daa75b-123a-446c-bcc5-954cdf31a9d7" data-media-type="file"></span><p /><p>Describe the table &quot;movies&quot; from backend psql:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">postgres# \d movies</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="442" loading="lazy" src="attachments/5636196/5570726.png?width=442" data-image-src="attachments/5636196/5570726.png" data-height="126" data-width="441" data-unresolved-comment-count="0" data-linked-resource-id="5570726" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_24_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="4168c818-1cff-47ce-bfb6-d72110773970" data-media-type="file"></span><p /><p>Update table movies (PGAdmin):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; update movies   
+
+set movie_genre=&#39;Drama, Crime&#39; 
+
+where movie_id = 103;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 150.0px;" /><p>Delete row(s) from table movies (PGAdmin):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; delete from movies
+
+			where movie_id = 108;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p>Where clause (PGAdmin):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from movies
+
+			where imdb_rating &gt; 8.7;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p>Where clause (PGAdmin):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from movies
+
+			where imdb_rating between 8.5 and 9.0;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p>Where clause (PGAdmin):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from movies
+
+			where movie_genre  =  &#39;Action&#39;;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p>Where clause with selected columns (PGAdmin):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select movie_name, movie_genre  from movies
+
+			where imdb_rating &lt; 9.0;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p>Where clause with IN operator (PGAdmin):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select movie_name, movie_genre  from movies
+
+			where imdb_rating in (8.7, 9.0);</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p><strong>Loading a CSV file into a psql table:</strong></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; create table employees
+
+(Emp_id int not null primary key,
+
+ Emp_name varchar(40), Email varchar(40), Gender varchar(10),
+
+Department varchar(40), Address varchar(40), Salary real);</pre>
+</div></div><p /><p /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees;</pre>
+</div></div><p /><p /><p /><p>Create a Comma Delimited Excel file in CSV format</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="455" loading="lazy" src="attachments/5636196/5570734.png?width=455" data-image-src="attachments/5636196/5570734.png" data-height="348" data-width="469" data-unresolved-comment-count="0" data-linked-resource-id="5570734" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_44_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="f90ebfaf-e959-4c02-88e9-9e9da3370898" data-media-type="file"></span><p /><p>Do the import on the table &quot;Employees&quot; -&gt; right click on Employees table -&gt; </p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="516" loading="lazy" src="attachments/5636196/5603489.png?width=516" data-image-src="attachments/5636196/5603489.png" data-height="357" data-width="533" data-unresolved-comment-count="0" data-linked-resource-id="5603489" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_42_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="fbe77b6c-12b7-4157-b2cd-d28210dfdc18" data-media-type="file"></span><p style="margin-left: 60.0px;">    ====&gt;  </p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="374" loading="lazy" src="attachments/5636196/5537997.png?width=374" data-image-src="attachments/5636196/5537997.png" data-height="361" data-width="390" data-unresolved-comment-count="0" data-linked-resource-id="5537997" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_34_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="50affeaa-b1cc-4c4f-acd6-ff9cb1794560" data-media-type="file"></span><p style="margin-left: 60.0px;">   ====&gt;</p><p style="margin-left: 60.0px;" /><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="448" loading="lazy" src="attachments/5636196/5570714.png?width=448" data-image-src="attachments/5636196/5570714.png" data-height="330" data-width="461" data-unresolved-comment-count="0" data-linked-resource-id="5570714" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_37_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="47d2ab12-0237-4315-8c0f-e1ea4e1c84cc" data-media-type="file"></span><p style="margin-left: 60.0px;">  ====&gt;   </p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="510" loading="lazy" src="attachments/5636196/5636236.png?width=510" data-image-src="attachments/5636196/5636236.png" data-height="187" data-width="515" data-unresolved-comment-count="0" data-linked-resource-id="5636236" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_31_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="0d6a07ad-cb61-4574-a520-54ba35ca2ae8" data-media-type="file"></span><p style="margin-left: 60.0px;">  ====&gt;</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees;
+
+
+
+Query Editor &gt; select distinct address from employees;
+
+
+
+Query Editor &gt; select * from employees where email is null;
+
+
+
+Query Editor &gt; select * from employees where department is null;</pre>
+</div></div><p /><p /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees order by salary;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Ascending order</p></div></div><p /><p style="margin-left: 120.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees order by salary desc;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Descending order</p></div></div><p /><p style="margin-left: 120.0px;" /><p /><p>Structural change in the table: Change the column name :</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; ALTER  table employees 
+
+RENAME column Address TO  Country;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees;</pre>
+</div></div><p /><p /><p /><p><strong>And</strong> operator in Where clause:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees 
+
+where country = &#39;France&#39; 
+
+AND salary &lt; 80000;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p><strong>OR</strong> operator in Where clause:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees 
+
+where country = Germany 
+
+OR  Department = &#39;Sales&#39;;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p><strong>Limit</strong> operator</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees 
+
+order by salary desc LIMIT 5;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p><strong>Limit </strong>&amp;<strong> Offset</strong> operator</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees 
+
+order by salary desc LIMIT  5  OFFSET 3;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>It will display the next 5 rows after offseting the first 3 rows of the set of rows fetched</p></div></div><p style="margin-left: 60.0px;" /><p>		[  ]</p><p /><p><strong>Fetch</strong> operator</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees 
+
+order by salary desc FETCH first 3 row only;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p><strong>Offset </strong>&amp;<strong> Fetch</strong> operator</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select * from employees 
+
+order by salary desc OFFSET 3 rows FETCH  first 5 row only;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>It will offset first 3 rows and display the next 5 rows after offseting the first 3 rows of the set of rows fetched</p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;" /><p /><p><strong>Like</strong> operator (pattern matching)</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select emp_name, email  from employees 
+
+where emp_name like &#39;A%&#39;; 
+
+
+
+Query Editor &gt; select emp_name, email  from employees 
+
+where emp_name like &#39;S%&#39;; 
+
+
+
+Query Editor &gt; select emp_name, email  from employees 
+
+where emp_name like &#39;%d&#39;; 
+
+
+
+Query Editor &gt; select emp_name, email  from employees 
+
+where emp_name like &#39;%ish%&#39;; 
+
+
+
+Query Editor &gt; select emp_name, email  from employees 
+
+where emp_name like &#39;_u%&#39;;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>To list all the employees whose name has 'u' in the second letter and first letter can be anything </p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 30.0px;" /><p /><p><strong>Mathematical Functions</strong> queries:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select sum(salary) from employees;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select sum(salary) as Total_Salary from employees;</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Giving an alias to a calculated function column</p></div></div><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;">	</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select avg(salary) as Mean_Salary from employees; 
+
+
+
+Query Editor &gt; select max(salary) as Maximum_Salary from employees; 
+
+
+
+Query Editor &gt; select  min(salary) as Minimum_Salary from employees; 
+
+
+
+Query Editor &gt; select count(distinct department) as Total_Dept from employees; 
+
+
+
+Query Editor &gt; select sum(salary) as Total_Salary from employees;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p><strong>Update </strong>null departments with a valid value:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; update employees
+
+set  department = &#39;Analytics&#39;
+
+where department is null;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p><strong>Group By </strong>clause:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select country, avg(salary) as average_salary
+
+from  employees  group by country order by average_salary desc;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p><strong>Max, Group By</strong> clause</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select gender, max(salary) as maximum_salary
+
+from  employees  group by gender;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 120.0px;" /><p><strong>Count, Group By</strong> clause</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select country, count(emp_id) as total_employees
+
+from  employees  group by country;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p><strong>Having </strong>clause  [ <strong>Where</strong> does not work with aggregate functions like count, max, min ]</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select country, avg(salary) as average_salary
+
+from  employees  group by country
+
+having average_salary &gt; 80000;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select country, count(emp_id) 
+
+from  employees  group by country
+
+having count(emp_id) &lt; 30;
+
+Query Editor &gt; select country, count(emp_id) 
+
+from  employees  group by country
+
+having count(emp_id) &lt; 30 
+
+order by count(emp_id);</pre>
+</div></div><p /><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><p /><ul><li><p><strong>CASE </strong>expression </p></li><li><p><strong>-- Case </strong>expression in PostgreSQL  [ &quot;--&quot; begins a comment statement ]</p></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select department, country,  salary, 
+
+CASE
+
+			   when salary &gt; 45000 and salary &lt; 55000
+
+				then &#39;Low Salary&#39;
+
+			   when salary &gt; 55000 and salary &lt; 80000
+
+				then &#39;Medium Salary&#39;
+
+			   when salary &gt; 80000
+
+				then &#39;High Salary&#39;
+
+			END as salary_range
+
+from  employees 
+
+	order by salary desc;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p /><p><strong>-- Subquery sql </strong>in PostgreSQL  </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select   emp_name, department,  country,  salary 
+
+			from employees 
+
+				where salary &gt;  (select avg(salary) from employees );</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p>/* <strong>SQL Functions</strong> in PostgreSQL   */</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select   abs(-100);
+
+
+
+Query Editor &gt; select   greatest(2, 54, 67, 4, 90, 56.5, 70);
+
+
+
+Query Editor &gt; select   least(2, 54, 67, 4, 90, 56.5, 70);
+
+
+
+Query Editor &gt; select   mod(54, 10);
+
+
+
+Query Editor &gt; select   power(5, 3);
+
+
+
+Query Editor &gt; select   sqrt(100);</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;" /><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select   sin(90);</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Trigonometric function sin, cos, tan etc </p></div></div><p /><p style="margin-left: 60.0px;"> </p><p>			</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select   ceil(6.45);</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Output is 7, the next highest integer</p></div></div><p /><p style="margin-left: 60.0px;" /><p>			</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select   floor(6.45);</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Output is 6, the prior lowest integer</p></div></div><p /><p style="margin-left: 60.0px;" /><p>			</p><p /><p /><p>/* <strong>STRING Functions</strong> in PostgreSQL   */</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select   char_length(&#39;India is the largest democracy..&#39;);
+
+
+
+Query Editor &gt; select   concat (&#39;PostgreSQL &#39;, &#39;is &#39;, &#39;interesting&#39;);
+
+
+
+Query Editor &gt; select   left (&#39;India is the largest democracy..&#39;, 5);
+
+
+
+Query Editor &gt; select   right (&#39;India is the largest democracy..&#39;, 12);
+
+
+
+Query Editor &gt; select   repeat (&#39;India &#39;, 5);
+
+
+
+Query Editor &gt; select   reverse (&#39;India is the largest democracy..&#39;);
+
+
+
+Query Editor &gt; select   left (&#39;India is the largest democracy..&#39;, 5);</pre>
+</div></div><p /><p /><p style="margin-left: 60.0px;" /><p /><p>/* <strong>USER DEFINED Functions</strong> in PostgreSQL   */</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; 	create or replace function
+
+			count_emails()
+
+			returns integer as $total_emails$  
+
+			declare
+
+				total_emails integer;
+
+			begin
+
+				select count(email) into total_emails
+
+				from employees;
+
+				return total_emails;
+
+			end;
+
+			$total_emails$  language  plpgsql;</pre>
+</div></div><p /><p /><p style="margin-left: 60.0px;" /><p>		</p><p>/*  Now, the <strong>last step</strong> is to call the <strong>User defined Function</strong>  */	</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select count_emails();</pre>
+</div></div><p>		</p><p style="margin-left: 30.0px;" /><p /><p><strong>PostgreSQL JOINs:</strong></p><p>	The PostgreSQL <strong>Joins</strong> clause is used to combine records from two or more tables in a database. A JOIN is a means for combining fields from two tables by using values common to each.</p><p /><p>Join Types in PostgreSQL are −</p><ul><li><p>The CROSS JOIN</p></li><li><p>The INNER JOIN</p></li><li><p>The LEFT OUTER JOIN</p></li><li><p>The RIGHT OUTER JOIN</p></li><li><p>The FULL OUTER JOIN</p></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; create table company (
+
+   			id int primary key     not null,
+
+   			name           text    not null,
+
+   			age            int     not null,
+
+   			address        varchar(50),
+
+   			salary         real
+
+       );
+       
+Query Editor &gt; create table department (
+
+   			id int primary key      not null,
+
+   			dept           varchar(50) not null,
+
+   			emp_id         int      references company(id)
+
+       );</pre>
+</div></div><p /><p style="margin-left: 30.0px;" /><p>	</p><p style="margin-left: 30.0px;" /><p>	<span style="color: rgb(0,0,0);">the list of records available in COMPANY table −</span></p><p><span style="color: rgb(0,0,0);">		</span></p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="238" loading="lazy" src="attachments/5636196/5537965.png?width=238" data-image-src="attachments/5636196/5537965.png" data-height="145" data-width="249" data-unresolved-comment-count="0" data-linked-resource-id="5537965" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_21_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="99358e51-4b0a-4995-bc88-1baad3a7a43f" data-media-type="file"></span><p>	</p><p><span style="color: rgb(0,0,0);">Here is the list of INSERT statements to populate DEPARTMENT table −</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; insert into department (id, dept, emp_id)
+
+values (1, &#39;It Billing&#39;, 1 );
+
+
+
+Query Editor &gt; insert into department (id, dept, emp_id)
+
+values (2, &#39;Engineering&#39;, 2 );
+
+
+
+Query Editor &gt; insert into department (id, dept, emp_id)
+
+values (3, &#39;Finance&#39;, 7 );</pre>
+</div></div><p /><p style="margin-left: 30.0px;" /><p>	</p><p><span style="color: rgb(0,0,0);">the list of records available in DEPARTMENT table −</span></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="149" loading="lazy" src="attachments/5636196/5636216.png?width=149" data-image-src="attachments/5636196/5636216.png" data-height="79" data-width="161" data-unresolved-comment-count="0" data-linked-resource-id="5636216" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_8_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="d1112922-639d-483e-810c-d74831da0a0e" data-media-type="file"></span><p>	</p><p>The <strong>CROSS JOIN</strong>:</p><p>		<span style="color: rgb(0,0,0);">A CROSS JOIN matches every row of the first table with every row of the second table, resulting in extremely large tables</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt; select emp_id, name, dept from company cross join department;</pre>
+</div></div><p /><p><span style="color: rgb(0,0,0);">		</span></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="170" loading="lazy" src="attachments/5636196/5603481.png?width=170" data-image-src="attachments/5636196/5603481.png" data-height="307" data-width="167" data-unresolved-comment-count="0" data-linked-resource-id="5603481" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_22_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="1f19803e-0015-4a1a-887a-bf7e9eb0807f" data-media-type="file"></span><p /><p>The <strong>INNER JOIN</strong>:</p><p style="margin-left: 60.0px;"><span style="color: rgb(0,0,0);">An INNER JOIN creates a new result table by combining column values of two tables (table1 and table2) based upon the join-predicate. The query compares each row of table1 with each row of table2 to find all pairs of rows, which satisfy the join-predicate. When the join-predicate is satisfied, column values for each matched pair of rows of table1 and table2 are combined into a result row.</span></p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">An INNER JOIN is the most common type of join and is the default type of join. You can use INNER keyword optionally.</span></p><p>		<span style="color: rgb(0,0,0);">Based on the above tables, we can write an INNER JOIN as follows −</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt;  select emp_id, name, dept 
+
+    from company   inner join   department
+
+        			on   company.id = department.emp_id;</pre>
+</div></div><p /><p /><p style="margin-left: 30.0px;" /><p>		</p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">The above given query will produce the following result −</span></p><p><span style="color: rgb(0,0,0);">		</span></p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="149" loading="lazy" src="attachments/5636196/5537957.png?width=149" data-image-src="attachments/5636196/5537957.png" data-height="59" data-width="162" data-unresolved-comment-count="0" data-linked-resource-id="5537957" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_9_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="d7da20dc-24e7-4ad2-b37b-5357ac4ec83d" data-media-type="file"></span><p /><p>The <strong>LEFT OUTER JOIN</strong>:</p><p>		<span style="color: rgb(0,0,0);">The </span><strong><span style="color: rgb(0,0,0);">OUTER JOIN</span></strong><span style="color: rgb(0,0,0);"> is an </span><strong><span style="color: rgb(0,0,0);">extension</span></strong><span style="color: rgb(0,0,0);"> of the </span><strong><span style="color: rgb(0,0,0);">INNER JOIN</span></strong><span style="color: rgb(0,0,0);">. SQL standard defines three types of OUTER JOINs: </span><strong><span style="color: rgb(0,0,0);">LEFT, RIGHT</span></strong><span style="color: rgb(0,0,0);">, and </span><strong><span style="color: rgb(0,0,0);">FULL</span></strong><span style="color: rgb(0,0,0);"> and PostgreSQL supports all of these.</span></p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">In case of LEFT OUTER JOIN, an inner join is performed first. Then, for each row in table T1 that does not satisfy the join condition with any row in table T2, a joined row is </span></p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">added with null values in columns of T2. Thus, the joined table always has at least one row for each row in T1.</span></p><p>		</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt;  select emp_id, name, dept 
+
+    from company   left outer join   department
+
+   			on company.id = department.emp_id;</pre>
+</div></div><p /><p style="margin-left: 30.0px;" /><p>		</p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">The above given query will produce the following result −</span></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="142" loading="lazy" src="attachments/5636196/5636228.png?width=142" data-image-src="attachments/5636196/5636228.png" data-height="155" data-width="157" data-unresolved-comment-count="0" data-linked-resource-id="5636228" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_10_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="f22519e3-8dfa-4cd1-8049-6822b75ab3a9" data-media-type="file"></span><p /><p>The <strong>RIGHT OUTER JOIN</strong>:</p><p style="margin-left: 60.0px;"><span style="color: rgb(0,0,0);">First, an </span><strong><span style="color: rgb(0,0,0);">inner join</span></strong><span style="color: rgb(0,0,0);"> is performed. Then, for each row in table T2 that does not satisfy the join condition with any row in table T1, a joined row is added with null values in columns of T1. </span><strong><span style="color: rgb(0,0,0);">This is the converse of a left join</span></strong><span style="color: rgb(0,0,0);">; the result table will always have a row for each row in T2.</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt;  select emp_id, name, dept 
+
+    from company   right outer join    department
+
+   			on company.id = department.emp_id;</pre>
+</div></div><p /><p /><p style="margin-left: 30.0px;" /><p>		</p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">The above given query will produce the following result −</span></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="170" loading="lazy" src="attachments/5636196/5537969.png?width=170" data-image-src="attachments/5636196/5537969.png" data-height="75" data-width="176" data-unresolved-comment-count="0" data-linked-resource-id="5537969" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_11_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="71619968-69c8-4313-a64e-a3ca9ce6742b" data-media-type="file"></span><p /><p>The <strong>FULL OUTER JOIN</strong>:</p><p>		<span style="color: rgb(0,0,0);">First, an </span><strong><span style="color: rgb(0,0,0);">inner join</span></strong><span style="color: rgb(0,0,0);"> is performed. Then, for each row in table T1 that does not satisfy the join condition with any row in table T2, a joined row is added with null values in </span></p><p style="margin-left: 30.0px;"><span style="color: rgb(0,0,0);">columns of T2. In addition, for each row of T2 that does not satisfy the join condition with any row in T1, a joined row with null values in the columns of T1 is added.</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">Query Editor &gt;  select emp_id, name, dept 
+
+  from company    full outer join    department
+
+  			 on company.id = department.emp_id;</pre>
+</div></div><p /><p>		</p><p style="margin-left: 30.0px;" /><p>		</p><p>		<span style="color: rgb(0,0,0);">The above given query will produce the following result −</span></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="170" loading="lazy" src="attachments/5636196/5603457.png?width=170" data-image-src="attachments/5636196/5603457.png" data-height="155" data-width="169" data-unresolved-comment-count="0" data-linked-resource-id="5603457" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_12_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="43142200-c109-4622-8c85-f2fd4bad0f94" data-media-type="file"></span><p /><p><strong>PostgreSQL STORED PROCEDURES:</strong></p><p>	</p><p><span style="color: rgb(0,0,0);">A drawback of </span><strong><span style="color: rgb(0,0,0);">user-defined functions</span></strong><span style="color: rgb(0,0,0);"> is that they </span><strong><span style="color: rgb(0,0,0);">cannot execute </span>transactions</strong><span style="color: rgb(0,0,0);">. In other words, inside a user-defined function, you cannot </span>start a transaction<span style="color: rgb(0,0,0);">, and commit or </span></p><p><span style="color: rgb(0,0,0);">rollback it.</span></p><p>	</p><p><span style="color: rgb(0,0,0);">PostgreSQL 11 introduced stored procedures that support transactions. To define a new stored procedure, you use the </span><strong><span style="color: rgb(0,0,0);">create procedure</span></strong><span style="color: rgb(0,0,0);"> statement.</span></p><p>	</p><p><span style="color: rgb(0,0,0);">The following illustrates the basic syntax of the create procedure statement:</span></p><p>		</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">create [or replace] procedure procedure_name(parameter_list)
+
+language plpgsql
+
+as $$
+
+declare
+
+-- variable declaration
+
+begin
+
+-- stored procedure body
+end; $$</pre>
+</div></div><p /><p>	<span style="color: rgb(0,0,0);">Parameters in stored procedures can have the </span><strong><span style="color: rgb(0,0,0);">in</span></strong><span style="color: rgb(0,0,0);"> and </span><strong><span style="color: rgb(0,0,0);">inout</span></strong><span style="color: rgb(0,0,0);"> modes. They </span><strong><span style="color: rgb(0,0,0);">cannot</span></strong><span style="color: rgb(0,0,0);"> have the</span><strong><span style="color: rgb(0,0,0);"> out</span></strong><span style="color: rgb(0,0,0);"> mode.</span></p><p>	</p><p><span style="color: rgb(0,0,0);">A stored procedure </span><strong><span style="color: rgb(0,0,0);">does not return a value</span></strong><span style="color: rgb(0,0,0);">. You </span><strong><span style="color: rgb(0,0,0);">cannot</span></strong><span style="color: rgb(0,0,0);"> use the </span><strong><span style="color: rgb(0,0,0);">return</span></strong><span style="color: rgb(0,0,0);"> statement with a value inside a store procedure like this:</span></p><p>		return expression;</p><p>	</p><p><span style="color: rgb(0,0,0);">However, you can use the </span><strong><span style="color: rgb(0,0,0);">return</span></strong><span style="color: rgb(0,0,0);"> statement without the </span><strong><span style="color: rgb(0,0,0);">expression</span></strong><span style="color: rgb(0,0,0);"> to </span><strong><span style="color: rgb(0,0,0);">stop</span></strong><span style="color: rgb(0,0,0);"> the stored procedure immediately:</span></p><p>		return;</p><p /><p>	<span style="color: rgb(0,0,0);">If one would want to return a value from a stored procedure, one can use parameters with the </span><strong><span style="color: rgb(0,0,0);">inout</span></strong><span style="color: rgb(0,0,0);"> mode.</span></p><p /><p>	<strong>Examples:</strong></p><p>	<span style="color: rgb(0,0,0);">We will use the following </span><strong><span style="color: rgb(0,0,0);">accounts</span></strong><span style="color: rgb(0,0,0);"> table for the demonstration:</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">drop table if exists accounts;
+
+
+
+create table accounts (
+
+    id int generated by default as identity,
+
+    name varchar(100) not null,
+
+    balance dec(15,2) not null,
+
+    primary key(id)
+
+);
+
+
+
+insert into accounts(name,balance)
+
+values(&#39;Bob&#39;,10000);
+
+
+
+insert into accounts(name,balance)
+
+values(&#39;Alice&#39;,10000);
+
+
+
+select * from accounts;</pre>
+</div></div><p /><p>		</p><p style="margin-left: 30.0px;" /><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="278" loading="lazy" src="attachments/5636196/5603461.png?width=278" data-image-src="attachments/5636196/5603461.png" data-height="107" data-width="293" data-unresolved-comment-count="0" data-linked-resource-id="5603461" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_13_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="9f38e6b6-a5bb-4c6e-9c1e-a40702ba6db8" data-media-type="file"></span><p>	<span style="color: rgb(0,0,0);">The following example creates a stored procedure named </span><strong><span style="color: rgb(0,0,0);">transfer</span></strong><span style="color: rgb(0,0,0);"> that transfers a specified amount of money from one account to another.</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">create or replace procedure transfer(
+
+   sender int,
+
+   receiver int, 
+
+   amount dec
+
+)
+
+language plpgsql    
+
+as $$
+
+begin
+
+    -- subtracting the amount from the sender&#39;s account 
+
+    update accounts 
+
+    set balance = balance - amount 
+
+    where id = sender;
+
+
+
+    -- adding the amount to the receiver&#39;s account
+
+    update accounts 
+
+    set balance = balance + amount 
+
+    where id = receiver;
+
+
+
+    commit;
+
+end; $$</pre>
+</div></div><p /><p>		</p><p>		</p><p /><p>	<strong>Calling a Stored Procedure:</strong></p><p>		<span style="color: rgb(0,0,0);">To call a stored procedure, you use the </span><strong><span style="color: rgb(0,0,0);">CALL</span></strong><span style="color: rgb(0,0,0);"> statement as follows:</span></p><p>		<span style="color: rgb(0,0,0);">For example, this statement invokes the </span><strong><span style="color: rgb(0,0,0);">transfer</span></strong><span style="color: rgb(0,0,0);"> stored procedure to transfer </span>$1,000<span style="color: rgb(0,0,0);"> from Bob’s account to Alice’s account.</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">call transfer(1,2,1000);</pre>
+</div></div><p /><p>			</p><p>				</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="306" loading="lazy" src="attachments/5636196/5570694.png?width=306" data-image-src="attachments/5636196/5570694.png" data-height="68" data-width="320" data-unresolved-comment-count="0" data-linked-resource-id="5570694" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_14_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="0362993c-67da-41f6-ac24-2309afc8e64a" data-media-type="file"></span><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">call transfer(2,1,600);</pre>
+</div></div><p /><p>			</p><p>				</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="306" loading="lazy" src="attachments/5636196/5603453.png?width=306" data-image-src="attachments/5636196/5603453.png" data-height="76" data-width="310" data-unresolved-comment-count="0" data-linked-resource-id="5603453" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_15_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="96834126-f571-4146-b17d-5557119540da" data-media-type="file"></span><p /><p /><p /><p><strong>Triggers in PostgreSQL:</strong></p><p>		<span style="color: rgb(0,0,0);">PostgreSQL </span><strong><span style="color: rgb(0,0,0);">Triggers</span></strong><span style="color: rgb(0,0,0);"> are database callback functions, which are automatically performed/invoked when a specified database event occurs.</span></p><ul><li><p><span style="color: rgb(0,0,0);">PostgreSQL trigger can be specified to fire</span></p><ul><li><p><span style="color: rgb(0,0,0);">Before the operation is attempted on a row (before constraints are checked and the INSERT, UPDATE or DELETE is attempted)</span></p></li><li><p><span style="color: rgb(0,0,0);">After the operation has completed (after constraints are checked and the INSERT, UPDATE, or DELETE has completed)</span></p></li><li><p><span style="color: rgb(0,0,0);">Instead of the operation (in the case of inserts, updates or deletes on a view)</span></p></li></ul></li></ul><p /><p style="margin-left: 60.0px;"><strong>Example:</strong></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">sql_demo=# 	CREATE TABLE COMPANY (
+
+   			ID INT PRIMARY KEY     NOT NULL,
+
+   			NAME           TEXT    NOT NULL,
+
+   			AGE            INT     NOT NULL,
+
+   			ADDRESS        CHAR(50),
+
+   			SALARY         NUMERIC
+
+);
+sql_demo=# 	CREATE TABLE AUDIT (
+
+   			EMP_ID INT NOT NULL,
+
+   			ENTRY_DATE TEXT NOT NULL
+
+		);
+
+		
+
+sql_demo=# 	CREATE TRIGGER example_trigger AFTER INSERT ON COMPANY
+
+			FOR EACH ROW EXECUTE PROCEDURE auditlogfunc();</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p style="margin-left: 60.0px;" /><p>		</p><p>		<span style="color: rgb(0,0,0);">Where </span><strong><span style="color: rgb(0,0,0);">auditlogfunc()</span></strong><span style="color: rgb(0,0,0);"> is a PostgreSQL </span><strong><span style="color: rgb(0,0,0);">procedure/function</span></strong><span style="color: rgb(0,0,0);"> and has the following definition −</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">CREATE OR REPLACE FUNCTION auditlogfunc() 
+
+RETURNS TRIGGER AS $example_table$
+
+   BEGIN
+
+      INSERT INTO AUDIT(EMP_ID, ENTRY_DATE) VALUES (new.ID, current_timestamp);
+
+      RETURN NEW;
+
+   END;
+
+$example_table$ LANGUAGE plpgsql;</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p style="margin-left: 60.0px;"><span style="color: rgb(0,0,0);">Now, we will start the actual work. Let us start inserting record in </span><strong><span style="color: rgb(0,0,0);">COMPANY</span></strong><span style="color: rgb(0,0,0);"> table which should result in creating an audit log record in </span><strong><span style="color: rgb(0,0,0);">AUDIT</span></strong><span style="color: rgb(0,0,0);"> table. So let us create one record in COMPANY table as follows −</span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">sql_demo=# 	INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
+
+		VALUES (1, &#39;Paul&#39;, 32, &#39;California&#39;, 20000.00 );</pre>
+</div></div><p /><p style="margin-left: 60.0px;" /><p /><p>		<span style="color: rgb(0,0,0);">This will create one record in COMPANY table, which is as follows −</span></p><p>		</p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="340" loading="lazy" src="attachments/5636196/5570698.png?width=340" data-image-src="attachments/5636196/5570698.png" data-height="84" data-width="345" data-unresolved-comment-count="0" data-linked-resource-id="5570698" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_16_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="520af231-42de-4189-b26f-0a855085fe69" data-media-type="file"></span><p /><p>		<span style="color: rgb(0,0,0);">Same time, one record will be created in AUDIT table</span></p><p><span style="color: rgb(0,0,0);">		</span></p><span class="confluence-embedded-file-wrapper image-left-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-left" width="340" loading="lazy" src="attachments/5636196/5636232.png?width=340" data-image-src="attachments/5636196/5636232.png" data-height="101" data-width="350" data-unresolved-comment-count="0" data-linked-resource-id="5636232" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="att_17_for_5636196.png" data-base-url="https://meraj1003.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="5636196" data-linked-resource-container-version="2" data-media-id="f5812599-7562-40c8-82ec-14b59930dd44" data-media-type="file"></span><p /><p><span style="color: rgb(0,0,0);">		Similarly, you can create your triggers on UPDATE and DELETE operations based on your requirements.</span></p><p>		</p><p>		<strong>Listing the triggers in the database</strong>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">sql_demo=#    SELECT * FROM pg_trigger;</pre>
+</div></div><p /><p>		</p><p>	</p><p>		<strong>Dropping the triggers from the database</strong>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: sql; gutter: false; theme: Confluence" data-theme="Confluence">sql_demo=#    DROP trigger &lt;trigger_name&gt;;</pre>
+</div></div><p /><p /><p /><p /><p /><p /><p /><p /><p /><p />
+                    </div>
+
+                                        
+                </section>
+            </div>
+        </div>     </body>
+</html>
